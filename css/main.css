@@ -457,13 +457,16 @@ input[type=checkbox]:checked ~ #menu{
         width: 57%;
     }
 	
+/*------------------------------------------------------------ boxes blue color */
 	.topline aside {
-        float:left;
-        width: 11%;
-		margin-left:2%;
-		margin-right:1.5%;
-		background:#0099FF;
-    }
+    float: left;
+    width: 11%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background: none repeat scroll 0% 0% #0099FF;
+    border: medium none blue;
+    height: 180px;
+}
 		
 
 /* ==== Box 1 ===== */
