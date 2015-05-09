@@ -1,0 +1,564 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 0.7em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font: 14px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+	/* To be added for checking only */
+	border: 1px solid #000000;
+}
+
+
+/* ------------------------------------------------------------ Image boxes */
+#page_content1,
+#page_content2,
+#page_content3,
+#page_content4
+ {
+	float:left;
+	margin: 1.5% 1.5% 1.5% 1.5%;
+	width:22%;
+}
+
+/* -------------------------------------------------------------- Header Display */
+.header-container {
+    border-bottom: 50px solid #515151;
+}
+
+/* -------------------------------------------------------------- button display */
+.buttondisp {
+
+	float:right;
+	padding-top:5%;
+	color:#0099FF;
+}
+
+.buttondisp1 {
+
+	float:right;
+	color:#0099FF;
+	padding-top:40%;
+
+}
+
+/* ------------------------------------------------------------- For the Header display language*/
+
+.language {
+	float: right;
+	text-align: right;
+}
+
+.language p {
+	color:#FFFFFF;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.language p strong {
+	color:#FFFFFF;
+	font-weight: 700;
+}
+
+
+.language a {
+	position: relative;
+	margin-left: 15px;
+	color:#FFFFFF;
+}
+
+.language a.change-language-link {
+	margin-right: 32px;
+}
+
+
+.language a.change-language-link:hover,
+.language a.change-language-link:focus,
+.language a.change-language-link:active {
+	color: rgb(255, 106, 0);
+}
+
+.language a img {
+	position: absolute;
+	top: 0;
+	right: -32px;
+}
+
+.structural {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+
+}
+
+/* ------------------------------------------------------------- Search Box */
+
+.search-box {
+	/*border: 1px solid #000000;*/
+	margin-top: 1%;
+	margin-bottom: 1%;
+	}
+
+#sf {
+	margin-left:5%;
+	width:80%;
+	}
+	
+#sb {
+	margin-right:5%;
+	}
+
+/* Edited by Sabia 07/05/2015 */
+.main aside {
+	border: 1px solid #000000;
+	background: #FFFFFF;
+}
+
+/* Edited by Sabia 07/05/2015 */
+.footer-container {
+    border-top: 20px solid #000000;
+}
+
+.header-container,
+.footer-container {
+    background: #000000;
+}
+
+.title {
+    color: white;
+}
+
+/*.logo {
+	position:absolute;
+	top: 35%;
+	left: 80px;
+	margin-top: -53px;
+	border-bottom: none;
+}*/
+
+.logo {
+	position:relative;
+	width:200px;
+	height:100px;
+}
+
+/* ---------------------------------------------------------------------- Menu Bar Display */
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+
+}
+
+/*Create a horizontal list with spacing*/
+.menu-item {
+	display:inline-block;
+	padding-top: 2.5px;
+}
+
+/*Create a horizontal list with spacing to right*/
+.menu-item-rite {
+	display:inline-block;
+	padding-top: 2.5px;
+	float:right;
+}
+
+
+/*Style for menu links*/
+.menu-item a {
+	display:block;
+	min-width:150px;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #515151;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*border-top: 1px solid #000000;*/
+}
+
+
+/*Hover state for top level links*/
+.menu-item:hover a {
+	color: #FF6A00;
+	background: #333333;
+}
+
+
+/*Style for dropdown links*/
+.menu-item:hover ul a {
+	background: #515151;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+/*li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}*/
+
+.menu-item:hover ul a:hover {
+	color: #FF6A00;
+	background: #262626;
+}
+
+/*Hide dropdown links until they are needed*/
+.hidden1 {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.hidden-item {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.hidden-item a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+.menu-item a:hover + .hidden1, .hidden1:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #333333;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	/* To be added for checking only */
+	border: 1px solid #000000;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+
+/* ------------------------------------------------------------- For Mobile */
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 1.5em;
+}
+
+.main aside {
+    color: black;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/*    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }*/
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+	
+	.topline aside {
+        float:left;
+        width: 11%;
+		margin-left:2%;
+		margin-right:1.5%;
+		background:#0099FF;
+    }
+		
+
+/* ==== Box 1 ===== */
+	 .box1 aside {
+        float:left;
+        width: 36%;
+		height:240px;
+		margin-bottom: 1.5%;
+		margin-top: 1.5%;
+		margin-left: 2%;
+		margin-right: 1%
+    }
+	
+/* ==== Box 2 ===== */
+	 .box2 aside {
+        float:right;
+        width: 35%;
+		margin-bottom: 1.5%;
+		margin-top: 1.5%;
+		margin-left: 1%;
+		margin-right: 3%
+    }
+	
+	.box3 aside {
+        float:left;
+      	width: 40%;
+		height:350px;
+		margin-bottom: 1.5%;
+		margin-top: 1.5%;
+		margin-left: 2%;
+		margin-right: 1%
+    }
+	
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+/*    img {
+        max-width: 100% !important;
+    }*/
+	
+	img {
+        max-width: 80% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
