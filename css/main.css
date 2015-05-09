@@ -95,7 +95,7 @@ body {
 
 }
 
-/* ------------------------------------------------------------- For the Header display language*/
+/* ------------------------------------------------------------- Header display language*/
 
 .language {
 	float: right;
@@ -155,17 +155,25 @@ body {
 .search-box {
 	/*border: 1px solid #000000;*/
 	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-bottom: 3%;
 	}
 
 #sf {
-	margin-left:5%;
-	width:80%;
-	}
+    margin-left: 5%;
+    width: 80%;
+    border: 2px solid #B4DFF6;
+    height: 25px;
+    background: #DCEEF6;
+}
 	
 #sb {
-	margin-right:5%;
-	}
+    margin-right: 5%;
+    color: orange;
+    width: 90px;
+    height: 31px;
+    border-color: orange;
+    background: white;
+}
 
 /* Edited by Sabia 07/05/2015 */
 .main aside {
