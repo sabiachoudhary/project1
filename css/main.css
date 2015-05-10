@@ -159,11 +159,8 @@ body {
 
 
 .buttondisp3 {
-
-	float:right;
-	color:#0099FF;
-	padding-top: 54%;
-
+    color:#0099FF;
+    padding-top: 355px;
 }
 
 /*--------------------------------------------------------- button for the boxes */	
@@ -555,6 +552,16 @@ input[type=checkbox]:checked ~ #menu{
 	margin-bottom: 2%;
 }
 	
+.side-box aside {
+    float: right;
+    width: 25%;
+    background: none repeat scroll 0% 0% #09F;
+    border: medium none #00F;
+    height: 180px;
+    margin: 1.5% 2% 1.5% 1%;
+}
+	
+	
 /* ==== Box 1 ===== */
 .box1 aside {
     float: left;
@@ -578,8 +585,8 @@ input[type=checkbox]:checked ~ #menu{
 /* ==== Box 3 ===== */
 .box3 aside {
     float: left;
-    width: 45%;
-    height: 350px;
+    width: 48%;
+    height: 400px;
     margin: 1.5% 1% 1.5% 2%;
 }
 	
