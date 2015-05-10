@@ -11,15 +11,45 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Sandvik Prototype Project - Phase 1</title>
 <meta name="description" content="">
+<meta name="GENERATOR" content="MSHTML 11.00.9600.17728">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="shortcut icon" href="img/favicon-196.png">
 <!--<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
 <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- Script function for the pop up starts here -->
+<script>
+(function($){
+	$.fn.styleddropdown = function(){
+		return this.each(function(){
+			obj = $(this)
+			obj.find('.mysetting').click(function() { //onclick event, 'list' fadein
+			obj.find('.list').fadeIn(400);
+			$(document).keyup(function(event) { //keypress event, fadeout on 'escape'
+				if(event.keyCode == 27) {
+				obj.find('.list').fadeOut(400);
+				}
+			});
+			obj.find('.list').hover(function(){ },
+				function(){
+					$(this).fadeOut(400);
+				});
+			});
+			obj.find('.list li').click(function() { //onclick event, change field value with selected 'list' item and fadeout 'list'
+			alert('Selected');
+			});
+		});
+	};
+})(jQuery);
+$(function(){
+	$('.size').styleddropdown();
+});
+</script>
+<!-- Script function for the pop up ends here -->
 </head>
 <!-- HEADER ENDS HERE -->
 <!-- BODY STARTS HERE -->
@@ -57,60 +87,76 @@
 </div>
 <!-- HEADER ENDS HERE -->
 <div class="main-container">
-  <div class="main wrapper clearfix">
-    <!-- Search bar starts here  -->
-    <div class="search-wrapper">
-      <div class="search-box">
-        <input name="q" type="text" placeholder="what do you want to search" class="sf"/>
-        <input type="submit" value="Search" class="sb"/>
-      </div>
+<div class="main wrapper clearfix">
+  <!-- Search bar starts here  -->
+  <div class="search-wrapper">
+    <div class="search-box">
+      <input name="q" type="text" placeholder="what do you want to search" class="sf"/>
+      <input type="submit" value="Search" class="sb"/>
     </div>
-    <!-- Search bar ends here  -->
-    <!-- Image i/p starts here  -->
-    <div class="topline">
+  </div>
+  <!-- Search bar ends here  -->
+  <!-- Image i/p starts here  -->
+  <div class="topline">
+    <aside>
+      <p></p>
+    </aside>
+    <aside>
+      <p></p>
+    </aside>
+    <aside>
+      <p></p>
+    </aside>
+    <aside>
+      <p></p>
+    </aside>
+  </div>
+  <!-- Image i/p ends here  -->
+  <!-- Empty box starts here  -->
+  <div>
+    <!-- Box 1 starts here -->
+    <div class="box1">
       <aside>
-        <p></p>
-      </aside>
-      <aside>
-        <p></p>
-      </aside>
-      <aside>
-        <p></p>
-      </aside>
-      <aside>
-        <p></p>
-      </aside>
-    </div>
-    <!-- Image i/p ends here  -->
-    <!-- Empty box starts here  -->
-    <div>
-      <div class="box1">
-        <aside>
-          <p> Box 1 </p>
+        <div class="inner-box1">
+          <div class="size">
+            <!- <INPUT name="test" class="field" type="text" readonly="readonly" value="choose your size">
+            <input type="image" class="mysetting"  src="img/images.jpg" onsubmit="submit();" width="18" height="18" />
+            <ul class="list">
+              <li>Test1</li>
+              <li>Test2</li>
+              <li>Test3</li>
+              <li>Test4</li>
+            </ul>
+          </div>
           <div class="buttondisp1"> <strong>
             <input class="bgdisp" type="button" value="SHOW ALL" id="b1"/>
             </strong> </div>
-        </aside>
-      </div>
-      <div class="box2">
-        <aside>
-          <p> Box 2 </p>
-          <div class="buttondisp"> <strong>
-            <input class="bgdisp" type="button" value="SHOW ALL" id="b2"/>
-            </strong> </div>
-        </aside>
-        <aside>
-          <p> Box 3 </p>
-          <div class="buttondisp"> <strong>
-            <input class="bgdisp" type="button" value="SHOW ALL" id="b3"/>
-            </strong> </div>
-        </aside>
-      </div>
+        </div>
+      </aside>
     </div>
+    <!-- Box 1 ends here -->
+    <!-- Box 2 starts here -->
+    <div class="box2">
+      <aside>
+        <p> Box 2 </p>
+        <div class="buttondisp2"> <strong>
+          <input class="bgdisp" type="button" value="SHOW ALL" id="b2"/>
+          </strong> </div>
+      </aside>
+	  <aside>
+	  <div class="inner-box1">
+	<input type="image" class="action-button"  src="img/images.jpg" onsubmit="submit();" width="18" height="18" />
+        <div class="buttondisp2"> <strong>
+          <input class="bgdisp" type="button" value="SHOW ALL" id="b3"/>
+          </strong> </div>
+		</div>
+      </aside>
+    </div>
+    <!-- Box 2 ends here -->
     <div class="box3">
       <aside>
         <p> Box 4 </p>
-        <div class="buttondisp2"> <strong>
+        <div class="buttondisp3"> <strong>
           <input class="bgdisp" type="button" value="SHOW ALL" id="b4"/>
           </strong> </div>
       </aside>
