@@ -159,16 +159,15 @@ body {
 }
 
 /* ------------------------------------------------------------- Search Box */
-#search {
+/*#search {
     height:125px;
     overflow:hidden;
-}
+}*/
 
 .search-wrapper {
     height: 80px;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     border: 1px solid #E9E9E9;
-    position: relative;
     margin: 0px 3% 3% 2%;
     width: 95.5%;
 }
@@ -176,23 +175,20 @@ body {
 .search-box {
     background-color: rgb(220, 238, 246);
     border: 1px solid #B4DFF6;
-    position: relative;
     height: 45px;
     width: 85%;
     margin: 1.7% 1% 1%;
 }
 
 .search-box img.search-icon {
-    margin: 1.5% 0px 0px 1.5%;
+    margin: 0px 0px 0px 1.5%;
 }
-
 
 .search-box input {
     border: medium none;
     height: 30px;
     width: 80%;
     margin: 1%;
-    position: absolute;
     font-size: 14px;
     padding-left: 1%;
     padding-right: 1%;
@@ -204,13 +200,12 @@ input.submit-button {
     border: 1px solid #FFA500;
     height: 45px;
     width: 100px;
-    position: absolute;
-    top: 6px;
     cursor: pointer;
     float: right;
     left: 88%;
-    margin-top: 1.2%;
     color: #FFA500;
+    position: none;
+    margin-right: 1.5%;
 }
 
 /* ------------------------------------------------------------- Main aside tag */
