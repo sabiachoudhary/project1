@@ -91,7 +91,7 @@ body {
 
 	float:right;
 	color:#0099FF;
-	padding-top: 42%;
+	padding-top: 37%;
 
 }
 
@@ -99,10 +99,21 @@ body {
 
 	float:right;
 	color:#0099FF;
-	padding-top: 57%;
+	padding-top: 54%;
 
 }
 
+/*--------------------------------------------------------- button for the boxes */	
+
+.bgdisp {
+    background: none repeat scroll 0% 0% rgb(0, 153, 255);
+    border: 1px solid rgb(0, 153, 255);
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    
+}
 /* ------------------------------------------------------------- Header display language*/
 
 .language {
@@ -159,55 +170,32 @@ body {
 }
 
 /* ------------------------------------------------------------- Search Box */
-/*#search {
-    height:125px;
-    overflow:hidden;
-}*/
-
 .search-wrapper {
     height: 80px;
     background-color: #FFFFFF;
-    border: 1px solid #E9E9E9;
-    margin: 0px 3% 3% 2%;
-    width: 95.5%;
 }
 
 .search-box {
-    background-color: rgb(220, 238, 246);
-    border: 1px solid #B4DFF6;
-    height: 45px;
-    width: 85%;
-    margin: 1.7% 1% 1%;
+	margin-top: 1%;
+	margin-bottom: 3%;
 }
 
-.search-box img.search-icon {
-    margin: 0px 0px 0px 1.5%;
-}
-
-.search-box input {
-    border: medium none;
-    height: 30px;
+.sf {
+    margin-left: 5%;
     width: 80%;
-    margin: 1%;
-    font-size: 14px;
-    padding-left: 1%;
-    padding-right: 1%;
-    background: none repeat scroll 0% 0% #DCEEF6;
+    border: 1px solid #B4DFF6;
+    height: 41px;
+    background:#DCEEF6;
 }
-
-input.submit-button {
-    background: none repeat scroll 0% 0% #FFF;
-    border: 1px solid #FFA500;
+	
+.sb {
+    margin-right: 5%;
+    color: orange;
+    width: 90px;
     height: 45px;
-    width: 100px;
-    cursor: pointer;
-    float: right;
-    left: 88%;
-    color: #FFA500;
-    position: none;
-    margin-right: 1.5%;
+    border: 1px solid #FFA500;
+    background: white;
 }
-
 /* ------------------------------------------------------------- Main aside tag */
 /* Edited by Sabia 07/05/2015 */
 .main aside {
@@ -502,20 +490,6 @@ input[type=checkbox]:checked ~ #menu{
     height: 180px;
 }
 	
-/*--------------------------------------------------------- button for the boxes */	
-#b1, 
-#b2, 
-#b3,
-#b4 {
-    color: white;
-    width: 80px;
-    height: 31px;
-    background: none repeat scroll 0% 0% rgb(0, 153, 255);
-    border-color: rgb(0, 153, 255);
-}
-
-
-
 /* ==== Box 1 ===== */
 .box1 aside {
     float: left;
