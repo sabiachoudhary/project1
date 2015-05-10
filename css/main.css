@@ -159,30 +159,61 @@ body {
 }
 
 /* ------------------------------------------------------------- Search Box */
+#search {
+    height:125px;
+    overflow:hidden;
+}
+
+.search-wrapper {
+    height: 80px;
+    background-color: #FFF;
+    border: 1px solid #E9E9E9;
+    position: relative;
+    margin: 0px 3% 3% 2%;
+    width: 95.5%;
+}
 
 .search-box {
-	/*border: 1px solid #000000;*/
-	margin-top: 1%;
-	margin-bottom: 3%;
-	}
+    background-color: rgb(220, 238, 246);
+    border: 1px solid #B4DFF6;
+    position: relative;
+    height: 45px;
+    width: 85%;
+    margin: 1.7% 1% 1%;
+}
 
-#sf {
-    margin-left: 5%;
+.search-box img.search-icon {
+    margin: 1.5% 0px 0px 1.5%;
+}
+
+
+.search-box input {
+    border: medium none;
+    height: 30px;
     width: 80%;
-    border: 2px solid #B4DFF6;
-    height: 25px;
-    background: #DCEEF6;
-}
-	
-#sb {
-    margin-right: 5%;
-    color: orange;
-    width: 90px;
-    height: 31px;
-    border-color: orange;
-    background: white;
+    margin: 1%;
+    position: absolute;
+    font-size: 14px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: none repeat scroll 0% 0% #DCEEF6;
 }
 
+input.submit-button {
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #FFA500;
+    height: 45px;
+    width: 100px;
+    position: absolute;
+    top: 6px;
+    cursor: pointer;
+    float: right;
+    left: 88%;
+    margin-top: 1.2%;
+    color: #FFA500;
+}
+
+/* ------------------------------------------------------------- Main aside tag */
 /* Edited by Sabia 07/05/2015 */
 .main aside {
 	background: none repeat scroll 0% 0% #FFFFFF;
