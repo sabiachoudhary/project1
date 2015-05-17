@@ -1,5 +1,3 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
 html {
     color: #222;
     font-size: 0.7em;
@@ -55,23 +53,336 @@ body {
     font: 14px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+/* ------------------------------------------ to define the outer middle width = 1180 px */
 .wrapper {
-    width: 90%;
+    width: 1178px;
     margin: 0 5%;
-	/* To be added for checking only */
-	border: 1px solid #000000;
+/*	border: 1px solid #000000;*/
+}
+
+/* -------------------------------------------------------------- Header Display */
+.header-container {
+    background: none repeat scroll 0% 0% #000;
+    height: 190px;
+    padding-top: 20px;
+    line-height: 1.8em;
+	border-bottom: 50px solid #333333;
+}
+
+/*.site-header {
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 190px;
+    padding-top: 20px;
+    line-height: 1.8em;
+}*/
+
+/* ------------------------------------------------------------ Tabs in the box */
+/*----- Tabs -----*/
+.tabs {
+    width: 95%;
+    padding-left:10px;
+}
+
+/*----- Tab Links -----*/
+.tab-links {
+    margin-bottom: 0px;
+      
+    padding-top: 15px !important;
+    padding-right: 0px !important;
+    padding-left: 20px !important;
+    border: none;
+    border-bottom: 1px solid #ff6700 !important;
+    background: none !important;
+    color: #000 !important;
+    font-size: 14px !important;
+    position: relative;
+	margin-left: 10px;
+}
+
+    /* Clearfix */
+    .tab-links:after {
+        display: block;
+        clear: both;
+        content: '';
+        
+        
+    }
+
+    .tab-links li {
+        float: left;
+        list-style: none;
+    }
+
+    .tab-links a {
+        padding: 3px 15px ;
+        display: inline-block;
+        border-radius: 3px 3px 0px 0px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #9f9f9f;
+        transition: all linear 0.15s;
+        background: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+    }
+
+        .tab-links a:hover {
+            text-decoration: none;
+        }
+
+li.active a, li.active a:hover {
+    background: #fff;
+    color: #9f9f9f;
+    border: 1px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-color: #ff6700;
+    border-bottom-color:#ff6700;
+    /*border-right: 30px solid transparent;
+    border-bottom: 30px solid #ffa600;
+    height: 0;*/ 
+        margin-bottom: -1px;
+    
+    
+}
+
+
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    
+    border-radius: 3px;
+    border-color: #ff6700;
+    /*border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;*/
+    background: #fff;
+    border-width: thin;
+	margin-left: 10px;
+    
+    
+}
+
+.tab {
+    display: none;
+}
+
+    .tab.active {
+        display: block;
+        
+
+    }
+
+
+/* -------------------------------------------------------- main navigation menu vertical bar */
+.nav-main {
+	float: left;
+	margin-left: 0%; /* 400/1280 */
+	line-height: 25px;
+}
+
+.nav-main ul {
+	margin-left: 300px;
+	list-style:none;
+}
+
+.nav-main li {
+	margin:0;
+}
+
+.nav-main li a {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    /*border: medium none;*/
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 300;
+	text-decoration: none;
+}
+
+.nav-main li a:hover,
+.nav-main li a:focus,
+.nav-main li a:active {
+	color: rgb(255, 106, 0);
+}
+
+.nav-main li.selected > a {
+	background: url(/gui/i/arrow-tail-right-orange-13x11.svg) 0 50% no-repeat;
+	color: rgb(255, 106, 0);
+}
+
+.no-svg .nav-main li.selected > a {
+	background-image: url(/gui/i/png/arrow-tail-right-orange-13x11.png);
+}
+
+.lt-ie8 .nav-main li.selected > a {
+	display:inline;
+	zoom:1;
+}
+
+.nav-main li[data-has-children] > ul {
+	display: none;
+}
+
+/*---------------------------------------------------- search box in header */
+
+.search-form-head {
+	position:absolute;
+	border:1px solid #2F2F2F ! important;
+	transition-delay: 0s, 0s, 0s, 0s;
+	transition-duration: 0.162s, 0.162s, 0.162s, 0.162s;
+	transition-property: color, border, background, opacity;
+	transition-timing-function: ease, ease, ease, ease;
+	right: 152px;
+	margin-top: 10px;
+    margin-right: 0px;
+	  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+ .structural {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	}
+
+
+.searchfld .search-field-head {
+	color: #fff;
+	font-size: 18px! important;
+	border: none ! important;
+	font-weight:300 ! important;
+	width: 320px ! important;
+	font-family: "aktiv-grotesk-std",sans-serif ! important; 
+	padding: 7px 80px 6px 38px ! important;
+	right: 10;
+	background: #000 url(img/search-orange-24x24.png) 8px 8px no-repeat;
+	background-image: linear-gradient(transparent, transparent), url(img/search-orange-24x24.png);
+	box-sizing: border-box! important;
+	-moz-box-sizing: border-box! important;
+	-webkit-box-sizing: border-box! important;
+	
+}
+
+body:not(.ie8) .searchfld .search-field-head {
+	min-height: 40px;
+}
+
+
+.ie9 .searchfld .search-field-head {
+	font-size: 14px ! important;
+}
+
+.search-field-head.placeholder {
+	color: #6E6E6E;
+}
+
+
+.searchfld .search-submit {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 10px ! important;
+	height: 38px;
+	vertical-align: middle;
+	border: none;
+	font-size: 1em;
+	line-height: 1em;
+	margin-top: 1px;
+	margin-right: 1px;
+	opacity: 0;
+	color:#09f;
+	text-transform: uppercase ! important;
+	-webkit-transition: color 0.162s ease, opacity 0.162s ease;
+	-moz-transition: color 0.162s ease, opacity 0.162s ease;
+	transition: color 0.162s ease, opacity 0.162s ease;
+}
+
+
+
+.searchfld .search-field-head::-webkit-input-placeholder {
+	color: #2F2F2F ! important;
+	font-size: 14px! important;
+	text-transform: uppercase! important;
+}
+
+.searchfld .search-field-head:-moz-placeholder,
+.searchfld .search-field-head::-moz-placeholder {
+	color: #6E6E6E! important;
+	font-size: 14px! important;
+	text-transform: uppercase! important;
+}
+
+.searchfld .search-field-head:-ms-input-placeholder {
+	color: #6E6E6E! important;
+	font-size: 14px! important;
+	text-transform: uppercase! important;
+}
+
+.searchfld .search-field-head:hover,
+.searchfld .search-field-head:focus {
+   /* border-color: #aaa! important;*/
+}
+
+.searchfld .search-field-head.autocomplete-active:hover,
+.searchfld .search-field-head.autocomplete-active:focus {
+	border-color: #d3d3d3;
+	 
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .searchfld .header-text {
+color: white;
+text-transform: uppercase;
+text-align: right;
+font-weight: 300;
+font-family: "aktiv-grotesk-std-n3", "aktiv-grotesk-std", sans-serif;
+font-size: 13px;
+font-size: 0.9em;
+}
+
+.wrapper .searchfld .header-text p {
+margin: 0;
+padding: 0 0 15px 0;
+}
+
+.wrapper .searchfld .header-text p b {
+display: inline-block;
+padding-left: 6px;
+font-weight: 400;
+font-family: "aktiv-grotesk-std-n4", "aktiv-grotesk-std", sans-serif;
+}
+
+/*-------------------------------------------------- hidden - print */
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
 }
 
 /* ------------------------------------------- new code for action button */
 .action-button {
-    margin-top: 20%;
     float: right;
+    margin-top: 18px;
+    margin-right: 18px;
 }
 
-.size { 
-	position:relative;
-	margin-top: 20%;
-    float: right; 
+.size {
+    position: relative;
+    margin-top: 18px;
+    float: right;
+    margin-right: 18px;
 }
 
 .size .field {
@@ -139,28 +450,32 @@ body {
 	width:22%;
 }
 
-
-
-/* -------------------------------------------------------------- Header Display */
-.header-container {
-    border-bottom: 50px solid #515151;
-}
-
 /* -------------------------------------------------------------- button display */
 .buttondisp1 {
-    color:#0099FF;
-    padding-top: 300px;
+    color: #0099FF;
+    padding-top: 243px;
+    margin-right: 18px;
+	margin-bottom: 18px;
 }
 
 .buttondisp2 {
-	padding-top: 100px;
+	padding-top: 105px;
 	color:#0099FF;
+	margin-right: 18px;
+	margin-bottom: 18px;
 }
 
 
 .buttondisp3 {
     color:#0099FF;
-    padding-top: 355px;
+    padding-top: 344px;
+    margin-right: 18px;
+}
+
+.header-search-button {
+	color: #000000;
+	background: #000000;
+	border: 1px solid #000000;
 }
 
 /*--------------------------------------------------------- button for the boxes */	
@@ -169,20 +484,75 @@ body {
     background: none repeat scroll 0% 0% rgb(0, 153, 255);
     border: 1px solid rgb(0, 153, 255);
     height: 35px;
-    width: 100px;
+    width: 120px;
     cursor: pointer;
     color: white;
     
 }
 
+/* ------------------------------------------------------------- Search Box in tab */
+#search {
+    height:125px;
+    overflow:hidden;
+}
+
+.tab-search-wrapper {
+    height: 61px;
+    background-color: #FFF;
+    width: 512px;
+    margin-left: 0px;
+    margin-right: 36px;
+    position: relative;
+}
+
+.tab-search-box {
+    background-color: #F2F9FF;
+    border: 1px solid #7DCDFE;
+    position: relative;
+    height: 42px;
+    width: 330px;
+    margin-top: 18px;
+}
+
+.tab-search-box img.tab-search-icon {
+    margin: 2.5% 0px 0px 2.5%;
+}
+
+.tab-search-box input {
+    border: medium none;
+    height: 30px;
+    width: 80%;
+    margin: 1%;
+    position: absolute;
+    font-size: 14px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: none repeat scroll 0% 0% #F2F9FF;
+}
+
+input.tabs-submit-button {
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #61BF67;
+    height: 43px;
+    width: 145px;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    float: right;
+    left: 350px;
+    color: #61BF67;
+}
+
 /* ------------------------------------------------------------- Header display language*/
 
 .language {
-	float: right;
-	text-align: right;
+    float: right;
+    text-align: right;
+    margin-right: 36px;
 }
 
 .language p {
+
 	color:#FFFFFF;
 	font-weight: normal;
 	font-size: 14px;
@@ -203,9 +573,9 @@ body {
 }
 
 .language a.change-language-link {
-	margin-right: 32px;
+    margin-right: 32px;
+    text-decoration: none;
 }
-
 
 .language a.change-language-link:hover,
 .language a.change-language-link:focus,
@@ -231,32 +601,61 @@ body {
 }
 
 /* ------------------------------------------------------------- Search Box */
+#search {
+    height:125px;
+    overflow:hidden;
+}
+
 .search-wrapper {
-    height: 80px;
-    background-color: #FFFFFF;
+    height: 85px;
+    background-color: #FFF;
+    border: 1px solid #9d9d9d;
+    position: relative;
+    width: 1108px;
+    z-index:-1;
+	margin-left: 36px;
+	margin-right: 36px;
 }
 
 .search-box {
-	margin-top: 1%;
-	margin-bottom: 3%;
+    background-color: #f2f9ff;
+    border: 1px solid #7dcdfe;
+    position: relative;
+    height: 49px;
+    width: 912px;
+    margin: 18px;
 }
 
-.sf {
-    margin-left: 5%;
+.search-box img.search-icon {
+    margin: 1.7% 0px 0px 1.7%;
+}
+
+.search-box input {
+    border: medium none;
+    height: 30px;
     width: 80%;
-    border: 1px solid #B4DFF6;
-    height: 41px;
-    background:#DCEEF6;
+    margin: 1%;
+    position: absolute;
+    font-size: 14px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: none repeat scroll 0% 0% #f2f9ff;
 }
-	
-.sb {
-    margin-right: 5%;
-    color: orange;
-    width: 90px;
-    height: 45px;
-    border: 1px solid #FFA500;
-    background: white;
+
+input.submit-button {
+    background: none repeat scroll 0% 0% #FFF;
+    border: 1px solid #ff6700;
+    height: 49px;
+    width: 142px;
+    position: absolute;
+    top: 6px;
+    cursor: pointer;
+    float: right;
+    left: 950px;
+    margin-top: 1.2%;
+    color: #ff6700;
 }
+
 /* ------------------------------------------------------------- Main aside tag */
 /* Edited by Sabia 07/05/2015 */
 .main aside {
@@ -264,32 +663,17 @@ body {
     border: 1.5px solid lightgray;
 }
 
-/* Edited by Sabia 07/05/2015 */
-.footer-container {
-    border-top: 20px solid #000000;
-}
 
-.header-container,
-.footer-container {
-    background: #000000;
-}
 
 .title {
     color: white;
 }
 
-/*.logo {
-	position:absolute;
-	top: 35%;
-	left: 80px;
-	margin-top: -53px;
-	border-bottom: none;
-}*/
-
 .logo {
-	position:relative;
-	width:200px;
-	height:100px;
+	/*position:relative;*/
+	width: 219px;
+	height: 80px;
+	margin-left: 36px;
 }
 
 /* ---------------------------------------------------------------------- Menu Bar Display */
@@ -308,21 +692,22 @@ ul {
 
 /*Create a horizontal list with spacing*/
 .menu-item {
-	display:inline-block;
-	padding-top: 2.5px;
+    display: inline-block;
+    padding-top: 2.5px;
+    margin-top: 80px;
+    margin-left: 36px;
 }
-
 
 /*Style for menu links*/
 .menu-item a {
 	display:block;
-	min-width: 140px;
+	min-width: 170px;
 	height: 49px;
 	line-height: 49px;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
-	background: #515151;
+	background: #333333;
 	text-decoration: none;
 	text-transform: uppercase;
 	/*border-top: 1px solid #000000;*/
@@ -331,13 +716,13 @@ ul {
 /*Hover state for top level links*/
 .menu-item:hover a {
 	color: #FF6A00;
-	background: #333333;
+	background: #272727;
 }
 
 
 /*Style for dropdown links*/
 .menu-item:hover ul a {
-	background: #333333;
+	background: #272727;
 	color: #FFFFFF;
 	height: 40px;
 	line-height: 40px;
@@ -347,25 +732,27 @@ ul {
 /*Hover state for dropdown links*/
 .menu-item:hover ul a:hover {
 	color: #FF6A00;
-	background: #262626;
+	background: #1d1d1d;
 }
 
 /*--------------------------------------------------------------- my cart option*/
 /*Create a horizontal list with spacing*/
 .menu-item-rite {
-	display:inline-block;
-	padding-top: 2.5px;
+    display: inline-block;
+    padding-top: 2.5px;
+    margin-top: 79px;
+    margin-right: 36px;
 }
 /*Style for menu links*/
 .menu-item-rite a {
 	display:block;
 	min-width: 140px;
-	height: 49px;
+	height: 50px;
 	line-height: 49px;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
-	background: #009900;
+	background: #08a000;
 	text-decoration: none;
 	text-transform: uppercase;	
 	}
@@ -374,36 +761,36 @@ ul {
 /*Create a horizontal list with spacing*/
 .menu-item-bubble {
 	display:inline-block;
-	padding-top: 2.5px;
+	padding-top: 2.7px;
 }
 /*Style for menu links*/
 .menu-item-bubble a {
-	display:block;
-	min-width: 80px;
-	height: 49px;
-	line-height: 49px;
-	text-align: center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #fff;
-	background: #515151;
-	text-decoration: none;
-	}
+    display: block;
+    min-width: 50px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #FFF;
+    background: none repeat scroll 0% 0% #333333;
+    text-decoration: none;
+	margin-top: 80px
+}
 
 .badge {
-  display: block;
-  position: absolute;
-  top: -0.1px;
-/*  right: 3px;*/
-  line-height: 16px;
-  height: 16px;
-  padding: 0 5px;
-  font-family: Arial, sans-serif;
-  color: white;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-  border: 1px solid;
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.08);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.08);
+    display: block;
+    font-family: Arial,sans-serif;
+    color: #FFF;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.25);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.3) inset, 0px 1px 1px rgba(0, 0, 0, 0.08);
+    float: right;
+    line-height: 16px;
+    position: relative;
+    height: 16px;
+    padding: 0px 5px;
+    right: 10px;
 }
 
 .badge {
@@ -429,9 +816,9 @@ ul {
 
 /*Prevent text wrapping*/
 .hidden-item a {
-	width: auto;
-	min-width: 140px;
-	padding: 0 20px;
+    width: auto;
+    min-width: 140px;
+    padding: 10px 25px;
 }
 
 /*Display the dropdown on hover*/
@@ -462,10 +849,9 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
+/* ------------------------------------------------------------- Responsive Styles*/
 
-/*Responsive Styles*/
-
-@media screen and (max-width : 760px){
+@media screen and (max-width : 768px){
 	/*Make dropdown links appear inline*/
 	ul {
 		position: static;
@@ -511,13 +897,6 @@ input[type=checkbox]:checked ~ #menu{
 
 @media only screen and (min-width: 768px) {
 
-/*    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }*/
-
 /* ============
     WIDE: Menu
    ============ */
@@ -540,34 +919,53 @@ input[type=checkbox]:checked ~ #menu{
         width: 57%;
     }
 	
+/* ------------------------------------------------------------ Footer */
+.footer-container {
+    border-top: 20px solid #000000;
+}
+
 /*------------------------------------------------------------ boxes blue color */
-.topline aside {
+
+.topline .top-box {
+
     float: left;
-    width: 11%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 248px;
     background: none repeat scroll 0% 0% #0099FF;
-    border: medium none blue;
+    border: 1px solid #0099FF;
     height: 180px;
-	margin-bottom: 2%;
+	margin-left: 36px;
+	margin-top: 36px;
+
 }
 	
-.side-box aside {
+.side-box1 {
     float: right;
-    width: 25%;
+    width: 248px;
     background: none repeat scroll 0% 0% #09F;
     border: medium none #00F;
     height: 180px;
-    margin: 1.5% 2% 1.5% 1%;
+	margin-top: 36px;
+	margin-right: 34px;
 }
 	
+.side-box2 {
+    float: right;
+    width: 248px;
+    background: none repeat scroll 0% 0% #09F;
+    border: medium none #00F;
+    height: 180px;
+	margin-top: 36px;
+	margin-right: 34px;
+}
 	
 /* ==== Box 1 ===== */
-.box1 aside {
-    float: left;
-    width: 36%;
-    height: 345px;
-    margin: 1.5% 1% 1.5% 2%;
+.box1 {	
+	float: left;
+    width: 536px;
+    border: 1px solid #9d9d9d;
+    height: 294px;
+	margin-left: 36px;
+	margin-top: 36px;
 }
 
 .inner-box1 {
@@ -575,19 +973,33 @@ input[type=checkbox]:checked ~ #menu{
 }
 	
 /* ==== Box 2 ===== */
-.box2 aside {
+.box2 {
     float: right;
-    width: 36%;
-	height: 150px;
-    margin: 1.5% 2.2% 1.5% 1%;
+    width: 533px;
+    height: 128px;
+    margin-top: 36px;
+    margin-right: 34px;
+    border: 1px solid #9d9d9d;
+}
+
+/* ==== Box 3 ===== */
+.box3 {
+    float: right;
+    width: 533px;
+	height: 128px;
+	margin-top: 36px;
+	margin-right: 34px;
+	border: 1px solid #9d9d9d;
 }
 	
-/* ==== Box 3 ===== */
-.box3 aside {
+/* ==== Box 4 ===== */
+.box4 {
     float: left;
-    width: 48%;
-    height: 400px;
-    margin: 1.5% 1% 1.5% 2%;
+    width: 820px;
+	height: 395px;
+	margin-top: 36px;
+	margin-left: 36px;
+	border: 1px solid #9d9d9d;
 }
 	
 }
@@ -598,10 +1010,10 @@ input[type=checkbox]:checked ~ #menu{
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+.wrapper {
+	width: 1178px;
+	margin: 0 auto;
+}
 }
 
 /* ==========================================================================
